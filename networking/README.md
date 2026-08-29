@@ -27,7 +27,11 @@ SSH (TCP port 22) for remote administration
 HTTP (TCP port 80) for web traffic
 EC2 Instance
 
+The EC2 instance was successfully launched and configured to host the NGINX web server.
+
 Security Group
+
+The Security Group was configured to allow SSH traffic on port 22 and HTTP traffic on port 80.
 
 2. Domain and DNS Configuration
 
@@ -49,11 +53,17 @@ The service showed as active (running).
 
 NGINX Running
 
+The NGINX service was running successfully on the EC2 instance.
+
 I then changed the default NGINX page and created my own simple webpage for the project.
 
 Website Before
 
+The default NGINX webpage was displayed before I replaced it with my custom webpage.
+
 Website After
+
+The custom webpage was successfully served by NGINX after replacing the default page.
 
 4. Commands I Used
 
@@ -110,9 +120,13 @@ The DNS response confirmed that nginx.shuibmo.dev was resolving correctly.
 
 DNS Test
 
+The DNS test confirmed that the custom domain was resolving correctly.
+
 This verified that the custom domain was successfully resolving through DNS and directing traffic towards the web server.
 
 DNS Resolution
+
+The DNS resolution results provided further confirmation that the nginx subdomain was resolving correctly.
 
 6. What I Learned
 
