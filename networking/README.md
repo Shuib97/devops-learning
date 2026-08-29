@@ -57,7 +57,7 @@ I checked that NGINX was installed and running with:
 
 ```bash
 sudo systemctl status nginx
-
+```
 The service showed as active (running).
 
 NGINX Running
@@ -78,7 +78,7 @@ Website After
 The custom webpage was successfully served by NGINX after replacing the default page.
 
 4. Commands I Used
-During the project, I used several Linux and networking commands to configure, test, and verify the web server.
+   During the project, I used several Linux and networking commands to configure, test, and verify the web server.
 
 Check NGINX Status
 I checked that the NGINX service was running:
@@ -117,7 +117,7 @@ ls -lah
 These commands were used to inspect files and verify that the project screenshots and other files were present.
 
 5. DNS Testing
-I tested the DNS configuration using:
+   I tested the DNS configuration using:
 
 dig nginx.shuibmo.dev
 
@@ -136,7 +136,7 @@ DNS Resolution
 The DNS resolution results provided further confirmation that the nginx subdomain was resolving correctly.
 
 6. What I Learned
-This project helped me understand how different networking and web-hosting components work together.
+   This project helped me understand how different networking and web-hosting components work together.
 
 I learned how to launch and manage an Ubuntu EC2 instance, configure Security Group rules for SSH and HTTP traffic, and install and manage NGINX as a web server.
 
@@ -145,14 +145,14 @@ I also learned how DNS works by creating a Cloudflare A record that connects a c
 Overall, this project gave me practical experience with AWS, Linux, NGINX, DNS, Cloudflare, networking ports, and hosting a website using a custom domain.
 
 7. Challenges and Solutions
-One challenge was connecting the custom domain to the EC2 instance. I solved this by configuring the Cloudflare DNS A record and using dig to verify that the domain was resolving correctly.
+   One challenge was connecting the custom domain to the EC2 instance. I solved this by configuring the Cloudflare DNS A record and using dig to verify that the domain was resolving correctly.
 
 I also had to configure the AWS Security Group to allow SSH on port 22 and HTTP on port 80 so I could access the server and serve the website.
 
 These challenges helped me understand how DNS, Security Groups, and web servers work together.
 
 8. Final Result
-The project was successfully completed and the NGINX web server is accessible through my custom domain.
+   The project was successfully completed and the NGINX web server is accessible through my custom domain.
 
 The final website is available at:
 
@@ -169,4 +169,7 @@ Custom domain
 HTTPS
 Live website
 The final result demonstrates that the EC2 instance, NGINX server, DNS configuration, and custom webpage are all working together successfully.
+
+```
+
 ```
