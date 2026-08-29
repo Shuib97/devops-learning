@@ -58,9 +58,11 @@ I checked that NGINX was installed and running with:
 ```bash
 sudo systemctl status nginx
 ```
+
 The service showed as active (running).
 
 NGINX Running
+
 ![NGINX Running](../Screenshots/nginx-running.png)
 
 The NGINX service was running successfully on the EC2 instance.
@@ -68,17 +70,20 @@ The NGINX service was running successfully on the EC2 instance.
 I then changed the default NGINX page and created my own simple webpage for the project.
 
 Website Before
+
 ![Website Before](../Screenshots/nginx-website.png)
 
 The default NGINX webpage was displayed before I replaced it with my custom webpage.
 
 Website After
+
 ![Website After](../Screenshots/nginx-website-custom.png)
 
 The custom webpage was successfully served by NGINX after replacing the default page.
 
-4. Commands I Used
-   During the project, I used several Linux and networking commands to configure, test, and verify the web server.
+## 4. Commands I Used
+
+During the project, I used several Linux and networking commands to configure, test, and verify the web server.
 
 Check NGINX Status
 I checked that the NGINX service was running:
@@ -116,14 +121,16 @@ ls -lah
 
 These commands were used to inspect files and verify that the project screenshots and other files were present.
 
-5. DNS Testing
-   I tested the DNS configuration using:
+## 5. DNS Testing
+
+I tested the DNS configuration using:
 
 dig nginx.shuibmo.dev
 
 The DNS response confirmed that nginx.shuibmo.dev was resolving correctly.
 
 DNS Test
+
 ![DNS Test](../Screenshots/dns-test.png)
 
 The DNS test confirmed that the custom domain was resolving correctly.
@@ -131,12 +138,14 @@ The DNS test confirmed that the custom domain was resolving correctly.
 This verified that the custom domain was successfully resolving through DNS and directing traffic towards the web server.
 
 DNS Resolution
+
 ![DNS Resolution](../Screenshots/dns-resolution.png)
 
 The DNS resolution results provided further confirmation that the nginx subdomain was resolving correctly.
 
-6. What I Learned
-   This project helped me understand how different networking and web-hosting components work together.
+## 6. What I Learned
+
+This project helped me understand how different networking and web-hosting components work together.
 
 I learned how to launch and manage an Ubuntu EC2 instance, configure Security Group rules for SSH and HTTP traffic, and install and manage NGINX as a web server.
 
@@ -144,15 +153,17 @@ I also learned how DNS works by creating a Cloudflare A record that connects a c
 
 Overall, this project gave me practical experience with AWS, Linux, NGINX, DNS, Cloudflare, networking ports, and hosting a website using a custom domain.
 
-7. Challenges and Solutions
-   One challenge was connecting the custom domain to the EC2 instance. I solved this by configuring the Cloudflare DNS A record and using dig to verify that the domain was resolving correctly.
+## 7. Challenges and Solutions
+
+One challenge was connecting the custom domain to the EC2 instance. I solved this by configuring the Cloudflare DNS A record and using dig to verify that the domain was resolving correctly.
 
 I also had to configure the AWS Security Group to allow SSH on port 22 and HTTP on port 80 so I could access the server and serve the website.
 
 These challenges helped me understand how DNS, Security Groups, and web servers work together.
 
-8. Final Result
-   The project was successfully completed and the NGINX web server is accessible through my custom domain.
+## 8. Final Result
+
+The project was successfully completed and the NGINX web server is accessible through my custom domain.
 
 The final website is available at:
 
