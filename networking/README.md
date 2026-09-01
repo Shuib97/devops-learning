@@ -29,7 +29,7 @@ The EC2 instance was configured with a Security Group that allows:
 
 ### EC2 Instance
 
-![AWS EC2 Instance](../Screenshots/ec2-instance.png)
+![AWS EC2 Instance](screenshots/ec2-instance.png)
 
 The EC2 instance was successfully launched and configured to host the NGINX web server.
 
@@ -37,7 +37,7 @@ The EC2 instance was successfully launched and configured to host the NGINX web 
 
 The Security Group was configured to allow SSH traffic on port 22 and HTTP traffic on port 80.
 
-![EC2 Security Group](../Screenshots/security-group.png)
+![EC2 Security Group](screenshots/security-group.png)
 
 ## 2. Domain and DNS Configuration
 
@@ -47,7 +47,7 @@ I created an A record for the nginx subdomain and pointed it towards the public 
 
 ### Cloudflare DNS
 
-![Cloudflare DNS](../Screenshots/cloudflare-dns.png)
+![Cloudflare DNS](screenshots/cloudflare-dns.png)
 
 ## 3. NGINX Setup
 
@@ -63,7 +63,7 @@ The service showed as active (running).
 
 NGINX Running
 
-![NGINX Running](../Screenshots/nginx-running.png)
+![NGINX Running](screenshots/nginx-running.png)
 
 The NGINX service was running successfully on the EC2 instance.
 
@@ -71,13 +71,13 @@ I then changed the default NGINX page and created my own simple webpage for the 
 
 Website Before
 
-![Website Before](../Screenshots/nginx-website.png)
+![Website Before](screenshots/nginx-website.png)
 
 The default NGINX webpage was displayed before I replaced it with my custom webpage.
 
 Website After
 
-![Website After](../Screenshots/nginx-website-custom.png)
+![Website After](screenshots/nginx-website-custom.png)
 
 The custom webpage was successfully served by NGINX after replacing the default page.
 
@@ -131,7 +131,7 @@ The DNS response confirmed that nginx.shuibmo.dev was resolving correctly.
 
 DNS Test
 
-![DNS Test](../Screenshots/dns-test.png)
+![DNS Test](screenshots/dns-test.png)
 
 The DNS test confirmed that the custom domain was resolving correctly.
 
@@ -139,7 +139,7 @@ This verified that the custom domain was successfully resolving through DNS and 
 
 DNS Resolution
 
-![DNS Resolution](../Screenshots/dns-resolution.png)
+![DNS Resolution](screenshots/dns-resolution.png)
 
 The DNS resolution results provided further confirmation that the nginx subdomain was resolving correctly.
 
